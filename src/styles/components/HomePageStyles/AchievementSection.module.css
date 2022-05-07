@@ -1,0 +1,22 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap");
+
+.achievement_wrapper {
+    width: 100%;
+    height: 500px;
+    background-color: white;
+}
+.title_section {
+    width: 100%;
+    height: 30%;
+    padding: 2%;
+    align-items: center;
+    font-family: Inter;
+}
+.card_section {
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.chk {
+    color: rgb(0, 255, 34);
+}
