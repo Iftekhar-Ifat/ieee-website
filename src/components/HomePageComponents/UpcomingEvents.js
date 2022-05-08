@@ -7,7 +7,8 @@ const UpcomingEvents = () => {
     return (
         <div className={styles.wrapper}>
             <div className={styles.events_wrapper}>
-                <h1>Upcoming Events</h1>
+                {/* <h1>Upcoming Events</h1> */}
+                <h1 className={styles.border_bottom}><span className={`fw-bold fs-2 ${styles.our}`}>UPCOMING</span> <span className={`fw-bold fs-2 ${styles.achievement}`}>EVENTS</span></h1>
                 <div className={styles.event_card}>
                     <Carousel>
                         <Carousel.Item>
@@ -58,7 +59,7 @@ const UpcomingEvents = () => {
                 </div>
             </div>
             <div className={styles.news_wrapper}>
-                <h1>Recent News</h1>
+                <h1 className={styles.border_bottom}><span className={`fw-bold fs-2 ${styles.our}`}>RECENT</span> <span className={`fw-bold fs-2 ${styles.achievement}`}>NEWS</span></h1>
                 <div className={styles.news_card}>
                     <div className={styles.upper_carousel}>
                         <Carousel>
@@ -108,13 +109,21 @@ const UpcomingEvents = () => {
                             </Carousel.Item>
                         </Carousel>
                     </div>
-                    <div className={styles.news_items}>
+                    <div className='my-3'>
                         <ul>
-                            <li>news 1</li>
-                            <li>news 2</li>
-                            <li>news 3</li>
-                            <li>news 4</li>
-                            <li>news 5</li>
+                            {Array.from({ length: 3 }).map((_, idx) => (
+                                <li>
+                                    <div className="d-flex">
+                                        <div className="w-75">
+                                            <img className="img-fluid p-2 w-100" src="https://styles.redditmedia.com/t5_2qi4j/styles/communityIcon_a0b0l0lb75k41.png" alt="" />
+                                        </div>
+                                        <div className="p-2">
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                        </div>
+                                    </div>
+                                </li>
+                            ))}
+
                         </ul>
                     </div>
                 </div>

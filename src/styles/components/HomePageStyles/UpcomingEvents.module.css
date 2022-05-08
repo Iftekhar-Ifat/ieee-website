@@ -6,13 +6,17 @@
     justify-content: space-between;
     background-color: white;
 }
+
 .events_wrapper {
     width: 60%;
     height: 500px;
 }
+
 .news_wrapper {
     width: 30%;
     height: 500px;
+    overflow-y: scroll;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .event_card {
@@ -26,6 +30,25 @@
     box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
 }
+
 .images {
     border-radius: 10px !important;
+}
+
+.our {
+    color: #E7AB53;
+}
+
+.achievement {
+    color: #0052A7;
+}
+
+.border_bottom {
+    display: inline-block;
+    border-bottom: solid 2px #E7AB53;
+}
+
+ul {
+    list-style: none;
+    padding: 2px;
 }
