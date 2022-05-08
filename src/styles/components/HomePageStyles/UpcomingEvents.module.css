@@ -16,13 +16,16 @@
 }
 
 .event_card {
-    margin-top: 2%;
-    height: 98%;
-    background-color: greenyellow;
+    height: auto;
+    box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
 }
 
 .news_card {
-    margin-top: 2%;
-    height: 98%;
-    background-color: blue;
+    height: auto;
+    box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+.images {
+    border-radius: 10px !important;
 }
