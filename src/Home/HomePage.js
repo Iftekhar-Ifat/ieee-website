@@ -10,7 +10,7 @@ const HomePage = () => {
     return (
         <>
             <Header />
-            <div className={styles.carousel_container}>
+            <div>
                 <BackgroundCarousel />
                 <AchievementSection />
                 <WelcomeSection />

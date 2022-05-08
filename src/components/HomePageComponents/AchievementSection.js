@@ -1,52 +1,37 @@
 import React from "react";
 import styles from "../../styles/components/HomePageStyles/AchievementSection.module.css";
 import "bootstrap/dist/css/bootstrap.min.css";
-import { Carousel } from "react-bootstrap";
+import { Card, Carousel, Col, Container, Row } from "react-bootstrap";
 
 const AchievementSection = () => {
     return (
-        <div className={styles.achievement_wrapper}>
-            <div className={styles.title_section}>
-                <h1 style={{ display: "flex", justifyContent: "center" }}>
-                    his is IEEE Website
-                </h1>
-                <h3 style={{ display: "flex", justifyContent: "center" }}>
-                    subtitle of our Achievement
-                </h3>
+        <Container>
+            <div className='text-center my-4'>
+                <h1 className={`fw-bold ${styles.achievement_border}`}> <span className={`${styles.our}`}>OUR </span> <span className={`${styles.achievement}`}> ACHIEVEMENTS </span> </h1>
+                <p className='p'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum quo architecto</p>
             </div>
-            <div className={styles.card_section}>
-                <Carousel>
-                    <Carousel.Item>
-                        <img
-                            className="d-block"
-                            src="/images/achievement_card.png"
-                            alt="First slide"
-                        />
-                        <Carousel.Caption>
-                            <h3 className={`fw-bold display-1 ${styles.chk}`}>
-                                First slide label
-                            </h3>
-                            <p>
-                                Nulla vitae elit libero, a pharetra augue mollis
-                                interdum.
-                            </p>
-                        </Carousel.Caption>
-                    </Carousel.Item>
-                    <Carousel.Item>
-                        <img
-                            className="d-block"
-                            src="/images/achievement_card.png"
-                            alt="Second slide"
-                        />
 
-                        <Carousel.Caption>
-                            <h3>Second slide label</h3>
-                            <p>This is IEEE Website</p>
-                        </Carousel.Caption>
-                    </Carousel.Item>
-                </Carousel>
+
+            <div className='my-3'>
+                <Row xs={1} md={2} lg={3} className="g-4">
+                    {Array.from({ length: 3 }).map((_, idx) => (
+                        <Col>
+                            <Card className={styles.achievement_card}>
+                                <Card.Img variant="top" src="https://i.ytimg.com/vi/dYtoBTvtUJg/maxresdefault.jpg" />
+                                <Card.Body>
+                                    <Card.Title>IEEE CS</Card.Title>
+                                    <Card.Text>
+                                        This is a longer card with supporting text below as a natural
+                                        lead-in to additional content. This content is a little bit longer.
+                                    </Card.Text>
+                                </Card.Body>
+                            </Card>
+                        </Col>
+                    ))}
+                </Row>
+
             </div>
-        </div>
+        </Container>
     );
 };
 
