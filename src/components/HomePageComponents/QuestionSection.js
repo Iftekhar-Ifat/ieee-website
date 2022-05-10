@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "../../styles/components/HomePageStyles/QuestionSection.module.css";
-import { Col, Container, Row, Dropdown } from "react-bootstrap";
+import { Col, Container, Row, Dropdown, Accordion } from "react-bootstrap";
 
 const QuestionSection = () => {
     return (
@@ -34,27 +34,45 @@ const QuestionSection = () => {
                             xs={12}
                             className={styles.welcome_card}
                         >
-                            <div className={styles.faqs}>
-                                <Dropdown>
-                                    <Dropdown.Toggle
-                                        variant="success"
-                                        id="dropdown-basic"
-                                    >
-                                        Dropdown Button
-                                    </Dropdown.Toggle>
-
-                                    <Dropdown.Menu>
-                                        <Dropdown.Item href="#/action-1">
-                                            Action
-                                        </Dropdown.Item>
-                                        <Dropdown.Item href="#/action-2">
-                                            Another action
-                                        </Dropdown.Item>
-                                        <Dropdown.Item href="#/action-3">
-                                            Something else
-                                        </Dropdown.Item>
-                                    </Dropdown.Menu>
-                                </Dropdown>
+                            <div className={`my-2 ${styles.faqs}`}>
+                                <h1 className={styles.border_bottom}><span className={`fw-bold fs-1 ${styles.achievement}`}>FAQs</span></h1>
+                                <Accordion>
+                                    <Accordion.Item eventKey="0">
+                                        <Accordion.Header>IEEE CS LU SB</Accordion.Header>
+                                        <Accordion.Body>
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                            tempor incididunt ut labore et dolore magna aliqua.
+                                        </Accordion.Body>
+                                    </Accordion.Item>
+                                    <Accordion.Item eventKey="1">
+                                        <Accordion.Header>IEEE CS LU SB</Accordion.Header>
+                                        <Accordion.Body>
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                            tempor incididunt ut labore et dolore magna aliqua.
+                                        </Accordion.Body>
+                                    </Accordion.Item>
+                                    <Accordion.Item eventKey="2">
+                                        <Accordion.Header>IEEE CS LU SB</Accordion.Header>
+                                        <Accordion.Body>
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                            tempor incididunt ut labore et dolore magna aliqua.
+                                        </Accordion.Body>
+                                    </Accordion.Item>
+                                    <Accordion.Item eventKey="3">
+                                        <Accordion.Header>IEEE CS LU SB</Accordion.Header>
+                                        <Accordion.Body>
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                            tempor incididunt ut labore et dolore magna aliqua.
+                                        </Accordion.Body>
+                                    </Accordion.Item>
+                                    <Accordion.Item eventKey="4">
+                                        <Accordion.Header>IEEE CS LU SB</Accordion.Header>
+                                        <Accordion.Body>
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                            tempor incididunt ut labore et dolore magna aliqua.
+                                        </Accordion.Body>
+                                    </Accordion.Item>
+                                </Accordion>
                             </div>
                         </Col>
                     </Row>

@@ -1,0 +1,14 @@
+.footer_container {
+    background-color: #1D2226;
+    height: 280px;
+    width: 100%;
+}
+
+.socials_container {
+    background-color: #08121b;
+    height: 80px;
+}
+
+.social_links {
+    display: flex;
+}
