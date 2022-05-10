@@ -20,7 +20,6 @@ const HomePage = () => {
                 <QuestionSection />
                 <Footer />
             </div>
-
         </>
     );
 };

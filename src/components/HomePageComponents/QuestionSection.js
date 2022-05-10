@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "../../styles/components/HomePageStyles/QuestionSection.module.css";
-import { Col, Container, Row, Dropdown, Accordion } from "react-bootstrap";
+import { Col, Container, Row, Accordion } from "react-bootstrap";
 
 const QuestionSection = () => {
     return (
@@ -35,41 +35,67 @@ const QuestionSection = () => {
                             className={styles.welcome_card}
                         >
                             <div className={`my-2 ${styles.faqs}`}>
-                                <h1 className={styles.border_bottom}><span className={`fw-bold fs-1 ${styles.achievement}`}>FAQs</span></h1>
+                                <h1 className={styles.border_bottom}>
+                                    <span
+                                        className={`fw-bold fs-1 ${styles.achievement}`}
+                                    >
+                                        FAQs
+                                    </span>
+                                </h1>
                                 <Accordion>
                                     <Accordion.Item eventKey="0">
-                                        <Accordion.Header>IEEE CS LU SB</Accordion.Header>
+                                        <Accordion.Header>
+                                            IEEE CS LU SB
+                                        </Accordion.Header>
                                         <Accordion.Body>
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                                            tempor incididunt ut labore et dolore magna aliqua.
+                                            Lorem ipsum dolor sit amet,
+                                            consectetur adipiscing elit, sed do
+                                            eiusmod tempor incididunt ut labore
+                                            et dolore magna aliqua.
                                         </Accordion.Body>
                                     </Accordion.Item>
                                     <Accordion.Item eventKey="1">
-                                        <Accordion.Header>IEEE CS LU SB</Accordion.Header>
+                                        <Accordion.Header>
+                                            IEEE CS LU SB
+                                        </Accordion.Header>
                                         <Accordion.Body>
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                                            tempor incididunt ut labore et dolore magna aliqua.
+                                            Lorem ipsum dolor sit amet,
+                                            consectetur adipiscing elit, sed do
+                                            eiusmod tempor incididunt ut labore
+                                            et dolore magna aliqua.
                                         </Accordion.Body>
                                     </Accordion.Item>
                                     <Accordion.Item eventKey="2">
-                                        <Accordion.Header>IEEE CS LU SB</Accordion.Header>
+                                        <Accordion.Header>
+                                            IEEE CS LU SB
+                                        </Accordion.Header>
                                         <Accordion.Body>
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                                            tempor incididunt ut labore et dolore magna aliqua.
+                                            Lorem ipsum dolor sit amet,
+                                            consectetur adipiscing elit, sed do
+                                            eiusmod tempor incididunt ut labore
+                                            et dolore magna aliqua.
                                         </Accordion.Body>
                                     </Accordion.Item>
                                     <Accordion.Item eventKey="3">
-                                        <Accordion.Header>IEEE CS LU SB</Accordion.Header>
+                                        <Accordion.Header>
+                                            IEEE CS LU SB
+                                        </Accordion.Header>
                                         <Accordion.Body>
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                                            tempor incididunt ut labore et dolore magna aliqua.
+                                            Lorem ipsum dolor sit amet,
+                                            consectetur adipiscing elit, sed do
+                                            eiusmod tempor incididunt ut labore
+                                            et dolore magna aliqua.
                                         </Accordion.Body>
                                     </Accordion.Item>
                                     <Accordion.Item eventKey="4">
-                                        <Accordion.Header>IEEE CS LU SB</Accordion.Header>
+                                        <Accordion.Header>
+                                            IEEE CS LU SB
+                                        </Accordion.Header>
                                         <Accordion.Body>
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                                            tempor incididunt ut labore et dolore magna aliqua.
+                                            Lorem ipsum dolor sit amet,
+                                            consectetur adipiscing elit, sed do
+                                            eiusmod tempor incididunt ut labore
+                                            et dolore magna aliqua.
                                         </Accordion.Body>
                                     </Accordion.Item>
                                 </Accordion>
