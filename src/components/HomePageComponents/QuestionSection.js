@@ -1,9 +1,8 @@
 import React from "react";
-import styles from "../../styles/components/HomePageStyles/WelcomeSection.module.css";
-import "bootstrap/dist/css/bootstrap.min.css";
-import { Col, Container, Row } from "react-bootstrap";
+import styles from "../../styles/components/HomePageStyles/QuestionSection.module.css";
+import { Col, Container, Row, Dropdown } from "react-bootstrap";
 
-const WelcomeSection = () => {
+const QuestionSection = () => {
     return (
         <div className={styles.wrapper}>
             <Container>
@@ -35,19 +34,27 @@ const WelcomeSection = () => {
                             xs={12}
                             className={styles.welcome_card}
                         >
-                            <div className={styles.welcome_message}>
-                                <p className="p-3">
-                                    Lorem ipsum dolor sit amet, consectetur
-                                    adipiscing elit. Nulla montes, dignissim
-                                    duis ac id mattis arcu. Scelerisque arcu
-                                    diam. Lorem ipsum dolor sit amet,
-                                    consectetur adipiscing elit. Nulla montes,
-                                    dignissim duis ac id mattis arcu.
-                                    Scelerisque arcu diam. Lorem ipsum dolor sit
-                                    amet, consectetur adipiscing elit. Nulla
-                                    montes, dignissim duis ac id mattis arcu.
-                                    Scelerisque arcu diam.{" "}
-                                </p>
+                            <div className={styles.faqs}>
+                                <Dropdown>
+                                    <Dropdown.Toggle
+                                        variant="success"
+                                        id="dropdown-basic"
+                                    >
+                                        Dropdown Button
+                                    </Dropdown.Toggle>
+
+                                    <Dropdown.Menu>
+                                        <Dropdown.Item href="#/action-1">
+                                            Action
+                                        </Dropdown.Item>
+                                        <Dropdown.Item href="#/action-2">
+                                            Another action
+                                        </Dropdown.Item>
+                                        <Dropdown.Item href="#/action-3">
+                                            Something else
+                                        </Dropdown.Item>
+                                    </Dropdown.Menu>
+                                </Dropdown>
                             </div>
                         </Col>
                     </Row>
@@ -57,4 +64,4 @@ const WelcomeSection = () => {
     );
 };
 
-export default WelcomeSection;
+export default QuestionSection;

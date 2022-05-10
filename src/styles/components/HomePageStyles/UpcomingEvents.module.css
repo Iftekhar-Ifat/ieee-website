@@ -36,19 +36,37 @@
 }
 
 .our {
-    color: #E7AB53;
+    color: #e7ab53;
 }
 
 .achievement {
-    color: #0052A7;
+    color: #0052a7;
 }
 
 .border_bottom {
     display: inline-block;
-    border-bottom: solid 2px #E7AB53;
+    border-bottom: solid 2px #e7ab53;
 }
 
 ul {
     list-style: none;
     padding: 2px;
+}
+
+@media (max-width: 900px) {
+    .wrapper {
+        flex-direction: column;
+        height: 600px;
+    }
+    .events_wrapper {
+        width: auto;
+        height: auto;
+        margin-bottom: 10%;
+    }
+
+    .news_wrapper {
+        width: auto;
+        height: auto;
+        margin-bottom: 5%;
+    }
 }

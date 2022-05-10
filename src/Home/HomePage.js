@@ -4,6 +4,7 @@ import AchievementSection from "../components/HomePageComponents/AchievementSect
 import BackgroundCarousel from "../components/HomePageComponents/BackgroundCarousel";
 import WelcomeSection from "../components/HomePageComponents/WelcomeSection";
 import UpcomingEvents from "../components/HomePageComponents/UpcomingEvents";
+import QuestionSection from "../components/HomePageComponents/QuestionSection";
 import styles from "../styles/HomePage.module.css";
 
 const HomePage = () => {
@@ -15,6 +16,7 @@ const HomePage = () => {
                 <AchievementSection />
                 <WelcomeSection />
                 <UpcomingEvents />
+                <QuestionSection />
             </div>
         </>
     );
