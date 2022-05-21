@@ -1,7 +1,7 @@
 import { Modal, Button } from "react-bootstrap";
 import React from "react";
 
-const SignInModal = (props) => {
+const JoinUsModal = (props) => {
     return (
         <Modal
             {...props}
@@ -11,7 +11,7 @@ const SignInModal = (props) => {
         >
             <Modal.Header closeButton>
                 <Modal.Title id="contained-modal-title-vcenter">
-                    Sign In Modal
+                    Join Us Modal
                 </Modal.Title>
             </Modal.Header>
             <Modal.Body>
@@ -29,4 +29,4 @@ const SignInModal = (props) => {
     );
 };
 
-export default SignInModal;
+export default JoinUsModal;

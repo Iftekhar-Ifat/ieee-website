@@ -3,9 +3,11 @@ import { Container, Nav, Navbar, NavDropdown } from "react-bootstrap";
 import { GrMenu, GrClose } from "react-icons/gr";
 import "./Header.css";
 import SignInModal from "./AuthModals/SignInModal";
+import JoinUsModal from "./AuthModals/JoinUsModal";
 
 const Header = () => {
     const [signInModalToggle, setSignInModalToggle] = useState(false);
+    const [joinUsModalToggle, setJoinUsInModalToggle] = useState(false);
     return (
         <>
             <Navbar
@@ -98,7 +100,12 @@ const Header = () => {
 
                         <div className="d-flex justify-content-around">
                             <Nav.Link href="#home" className="px-0">
-                                <button className="pill-fill-btn mx-3">
+                                <button
+                                    className="pill-fill-btn mx-3"
+                                    onClick={() => {
+                                        setJoinUsInModalToggle(true);
+                                    }}
+                                >
                                     Join Us
                                 </button>
                             </Nav.Link>
@@ -121,6 +128,12 @@ const Header = () => {
                 <SignInModal
                     show={signInModalToggle}
                     onHide={() => setSignInModalToggle(false)}
+                />
+            ) : null}
+            {joinUsModalToggle ? (
+                <JoinUsModal
+                    show={joinUsModalToggle}
+                    onHide={() => setJoinUsInModalToggle(false)}
                 />
             ) : null}
         </>
