@@ -11,15 +11,13 @@ import Footer from "../components/HomePageComponents/Footer";
 const HomePage = () => {
     return (
         <>
-            {/* <Header /> */}
-            <div>
-                <BackgroundCarousel />
-                <AchievementSection />
-                <WelcomeSection />
-                <UpcomingEvents />
-                <QuestionSection />
-                <Footer />
-            </div>
+            <Header />
+            <BackgroundCarousel />
+            <AchievementSection />
+            <WelcomeSection />
+            <UpcomingEvents />
+            <QuestionSection />
+            <Footer />
         </>
     );
 };
