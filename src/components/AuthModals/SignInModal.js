@@ -28,7 +28,7 @@ const SignInModal = (props) => {
                 <Container>
                     <Form className="w-50 mx-auto">
                         <Form.Group className="mb-3" controlId="formBasicEmail">
-                            <Form.Label className="text-muted">Email Name or Email</Form.Label>
+                            <Form.Label className="text-muted">User Name or Email</Form.Label>
                             <Form.Control className={styles.input_box} name="email" type="email" placeholder="" />
 
                         </Form.Group>
