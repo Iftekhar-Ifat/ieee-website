@@ -65,17 +65,17 @@ const SignInModal = (props) => {
 
                             <div className={styles.login_with_container}>
                                 <a href="http://www.facebook.com">
-                                    <p className="text-dark display-5 p-2">
+                                    <p className="text-secondary display-5 p-2">
                                         <FaFacebook />
                                     </p>
                                 </a>
                                 <a href="http://www.facebook.com">
-                                    <p className="text-dark display-5 p-2">
+                                    <p className="text-secondary display-5 p-2">
                                         <FaLinkedinIn />
                                     </p>
                                 </a>
                                 <a href="http://www.facebook.com">
-                                    <p className="text-dark display-5 p-2">
+                                    <p className="text-secondary display-5 p-2">
                                         <FaEnvelope />
                                     </p>
                                 </a>
