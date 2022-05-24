@@ -1,0 +1,9 @@
+.bg {
+    position: relative;
+    height: 450px;
+    background: radial-gradient(46.85% 269.87% at 44.54% 66.67%, rgba(73, 184, 191, 0.46) 0%, rgba(73, 184, 191, 0.22) 100%)
+}
+
+.heading_style {
+    /* margin-top: 100px; */
+}
