@@ -15,3 +15,10 @@
 .heading_style {
     padding-top: 2%;
 }
+
+@media (max-width: 900px) {
+    .wrapper {
+        height: auto;
+        padding-bottom: 5%;
+    }
+}

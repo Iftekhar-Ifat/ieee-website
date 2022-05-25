@@ -1,7 +1,7 @@
 .wrapper {
     padding: 5%;
     width: 100%;
-    height: 700px;
+    height: auto;
     display: flex;
     justify-content: space-between;
     background-color: white;
@@ -59,7 +59,7 @@ ul {
 @media (max-width: 900px) {
     .wrapper {
         flex-direction: column;
-        height: 600px;
+        height: auto;
     }
     .events_wrapper {
         width: auto;
@@ -67,6 +67,10 @@ ul {
         margin-bottom: 10%;
     }
 
+    .recent_news_wrapper {
+        width: auto;
+        height: auto;
+    }
     .news_wrapper {
         width: auto;
         height: auto;

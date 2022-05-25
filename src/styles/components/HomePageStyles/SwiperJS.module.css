@@ -35,7 +35,7 @@
     height: 210px;
     margin: auto;
     margin-top: 140px;
-    background: #FFFFFF;
+    background: #ffffff;
     padding: 30px;
     /* box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25); */
     /* box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px; */
@@ -50,7 +50,6 @@
     margin-top: -45px;
 }
 
-
 .user_img_container {
     display: flex;
     justify-content: center;
@@ -61,7 +60,15 @@
     display: flex;
     justify-content: center;
     margin-top: -90px;
-    border: 2px solid #E7AB53;
+    border: 2px solid #e7ab53;
     border-radius: 50px;
-    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 8px 20px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+        rgba(0, 0, 0, 0.22) 0px 8px 20px;
+}
+
+@media (max-width: 900px) {
+    .review_card {
+        width: auto;
+        height: auto;
+    }
 }
