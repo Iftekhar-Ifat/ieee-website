@@ -1,19 +1,30 @@
-import React from 'react';
-import { Container } from 'react-bootstrap';
-import styles from "../../styles/components/HomePageStyles/ReviewSection.module.css"
-import SwiperJS from './SwiperJS';
+import React from "react";
+import { Container } from "react-bootstrap";
+import styles from "../../styles/components/HomePageStyles/ReviewSection.module.css";
+import SwiperJS from "./SwiperJS";
 const ReviewSection = () => {
     return (
-        <Container className={styles.bg}>
-            {/* swiperJS */}
-            <div>
+        <div className={styles.wrapper}>
+            <Container className={styles.bg}>
+                {/* swiperJS */}
                 <div>
-                    <h1 className={`${styles.heading_style} text-center fw-bold`}> <span style={{ color: '#E7AB53' }}>What People</span> <span style={{ color: "#0052A7" }}>Say About Us</span></h1>
+                    <div>
+                        <h1
+                            className={`${styles.heading_style} text-center fw-bold`}
+                        >
+                            {" "}
+                            <span style={{ color: "#E7AB53" }}>
+                                What People
+                            </span>{" "}
+                            <span style={{ color: "#0052A7" }}>
+                                Say About Us
+                            </span>
+                        </h1>
+                    </div>
+                    <SwiperJS></SwiperJS>
                 </div>
-                <SwiperJS></SwiperJS>
-            </div>
-
-        </Container>
+            </Container>
+        </div>
     );
 };
 
