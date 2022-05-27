@@ -71,7 +71,7 @@ const SignInModal = (props) => {
                             </label>
                             <br></br>
                         </div>
-                        <div className="mt-5 mb-4 d-flex justify-content-between">
+                        <div className="mt-5 mb-4 d-flex justify-content-around">
                             <div>
                                 <button
                                     className={styles.signIn_btn}
